@@ -1,0 +1,110 @@
+.left-navbar {
+  position: absolute;
+  left: 0;
+  width: 27%;
+  height: 100%;
+  background-color: #EFEFF4;
+  font-size: 30rpx;
+}
+
+.left-navbar view {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #282828;
+  font-size: 26rpx;
+  border-bottom: 2rpx solid #fff;
+}
+
+.left-navbar view:last-child {
+  border-bottom: none;
+}
+
+.activt {
+  border-left: 8rpx solid #13b239;
+  background-color: #fff;
+  color: #13b239 !important;
+}
+
+.right-content {
+  position: absolute;
+  right: 0;
+  width: 73%;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.nav_section {
+  width: 100%;
+}
+
+.nav_section_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30rpx;
+  border-bottom: 2rpx solid #ddd;
+  position: relative;
+}
+
+.nav_section_items:active {
+  background: #ddd;
+}
+
+.nav_section_items .section_image {
+  width: 170rpx;
+  height: 158rpx;
+}
+
+.nav_section_items .section_image image {
+  width: 100%;
+  height: 100%;
+}
+
+.nav_section_items .section_cont {
+  font-size: 26rpx;
+  color: #a9a9a9;
+}
+
+.nav_section_items .section_cont view {
+  display: block;
+}
+
+.intro {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav_section_items .section_cont .section_cont_intro {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.nav_section_items .section_cont .section_cont_sub {
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color: #000;
+  margin-bottom: 10rpx;
+}
+
+.nav_section_items .section_cont .section_cont_price {
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  color: #111;
+}
+
+.nav_section_items .section_book {
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 26rpx;
+  border-radius: 100%;
+  background: #d24a58;
+  line-height: 80rpx;
+  color: #fff;
+  text-align: center;
+  margin-top: 35rpx;
+}

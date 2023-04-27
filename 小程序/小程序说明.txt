@@ -1,0 +1,5 @@
+1、先下载微信开发者工具，网址：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
+2、用微信开发者工具打开该小程序，输入小程序配置的appid
+3、编译运行,即可在微信开发者工具中查看效果
+4、如果想在手机中体验，需要把手机和电脑连在同一个wifi下，并获取电脑的ip地址，
+   小程序打开app.js，修改ip地址为本机对应的ip

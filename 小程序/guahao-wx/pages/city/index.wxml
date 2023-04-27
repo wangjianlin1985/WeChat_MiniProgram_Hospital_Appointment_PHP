@@ -1,0 +1,33 @@
+<view class="classify">
+  <scroll-view class="left-navbar" scroll-y="true">
+    <view wx:key="index" class="list-item {{classIndex==index?'activt':''}}" wx:for="{{cates}}" bindtap="classTap" data-index="{{index}}">{{item.name}}</view>
+  </scroll-view>
+
+  <scroll-view class="right-content" scroll-y="true" scroll-top="{{scrollTop}}">
+    <view class="nav_section">
+      <block wx:for="{{cates[classIndex].hospitals}}" wx:key="index">
+        <navigator url="/pages/hospital/detail?hospital_id={{item.id}}">
+          <view class="nav_section_items">
+            <!--image-->
+            <view class="section_image">
+              <block wx:if="{{item.image}}">
+                <image src="{{config.url+item.image}}" mode="aspectFill"></image>
+              </block>
+              <block wx:else>
+                <image src="/static/images/doctor.jpg" mode="aspectFill"></image>
+              </block>
+            </view>
+            <!--content-->
+            <view class="section_cont">
+              <view class="section_cont_sub">
+                <text>{{item.name}}</text>
+              </view>
+              <view class="section_cont_price">{{ item.address}}</view>
+              <view class="intro">{{item.intro}}</view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </scroll-view>
+</view>

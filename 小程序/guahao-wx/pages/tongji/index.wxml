@@ -1,0 +1,27 @@
+<view class="tj">
+  <view class="fphs">
+    <view class="circle"><text>{{tj.yy}}</text>家</view>
+  </view>
+  <view class="tips">就诊医院</view>
+</view>
+
+<view class="tj">
+  <view class="fpcs">
+    <view class="circle"><text>{{tj.ks}}</text>科</view>
+  </view>
+  <view class="tips">就诊科室</view>
+</view>
+
+<view class="tj">
+  <view class="fpws">
+    <view class="circle"><text>{{tj.ys}}</text>位</view>
+  </view>
+  <view class="tips">就诊医生</view>
+</view>
+
+<view class="tj">
+  <view class="fpje">
+    <view class="circle"><text>{{tj.je}}</text>元</view>
+  </view>
+  <view class="tips">就诊金额</view>
+</view>

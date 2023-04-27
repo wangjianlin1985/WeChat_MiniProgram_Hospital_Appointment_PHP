@@ -1,0 +1,7 @@
+1、本机安装mysql5.7数据库，记住默认密码，一般为root
+2、使用数据库管理工具，如navicat，新建一个本机数据库为guahao，字符编码集选择utf8mb4 -- UTF-8 Unicode,排序规则utf8mb4_unicode_ci
+3、使用工具导入本目录中的guahao.sql
+4、修改jz-admin目录中的.env文件，修改数据库名称，用户名，密码
+   DB_DATABASE=guahao  数据库名称
+   DB_USERNAME=root  数据库用户名
+   DB_PASSWORD=root  数据库密码

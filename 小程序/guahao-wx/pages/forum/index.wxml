@@ -1,0 +1,30 @@
+<view class="tab">
+  <block wx:for="{{tabList}}" wx:key="tabIndex">
+    <view class="tab-item {{index==tabIdx?'curr':''}}">
+      <text class="txt" bindtap='tabTap' data-id="{{index}}">{{item.txt}}</text>
+      <text class="border"></text>
+    </view>
+  </block>
+</view>
+
+<view wx:if="{{ tabIdx==0 }}">
+  <navigator wx:for="{{ forumList }}" wx:key="index" 
+             url="/pages/forum/detail?forum_id={{item.id}}" class="forum">
+    <text class="forum-title">{{index+1}}、{{ item.title }}</text>
+    <text class="forum-counts">{{ item.counts }}人</text>
+  </navigator>
+</view>
+
+<view wx:if="{{ tabIdx==1 }}">
+  <view class="head-list">
+    <view>帖子内容</view>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class="textarea-set">
+      <textarea name="title" cursor-spacing="100"></textarea>
+    </view>
+    <view style="padding:20px 0px 40px 0px;">
+      <button form-type="submit" type="primary">提交发布</button>
+    </view>
+  </form>
+</view>

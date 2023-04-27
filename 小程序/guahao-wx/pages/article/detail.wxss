@@ -1,0 +1,16 @@
+/* pages/article/detail.wxss */
+.article .title{
+  display: block;
+  margin: 40rpx 10rpx;
+  font-size: 38rpx;
+  text-align: center;
+}
+.article .time{
+  color:#888;
+  text-align: center;
+  line-height: 80rpx;
+}
+.article .content{
+  text-indent: 2em;
+  line-height: 60rpx;
+}

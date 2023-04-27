@@ -1,0 +1,33 @@
+<view class="main">
+    <form bindsubmit="formSubmit">
+        <view class="head-list">
+            <view style="width: 200rpx;">手机号</view>
+            <view style="width: 400rpx;">
+                <input type="number" name="phone" class="input-set" placeholder="请填写手机号" />
+            </view>
+            <view style="width: 100rpx;"></view>
+        </view>
+        <view class="head-list">
+            <view style="width: 200rpx;">登录密码</view>
+            <view style="width: 400rpx;">
+                <input class="input-set" name="password" type="text" placeholder="请填写密码"></input>
+            </view>
+            <view style="width: 100rpx;"></view>
+        </view>
+        <view class="head-list">
+            <view style="width: 200rpx;">验证码</view>
+            <view style="width: 400rpx;">
+                <input class="input-set" name="code" type="text" placeholder="请填写验证码"></input>
+            </view>
+            <view bindtap="createCode" class="code" style="width: 100rpx;">{{ code }}</view>
+        </view>
+        <view style="margin-top:20px">
+            <button form-type="submit" type="primary">登录账号</button>
+        </view>
+    </form>
+    <navigator url="/pages/reg/index">
+        <view style="text-align:center;margin-top:20px;">
+            <text>注册账号</text>
+        </view>
+    </navigator>
+</view>

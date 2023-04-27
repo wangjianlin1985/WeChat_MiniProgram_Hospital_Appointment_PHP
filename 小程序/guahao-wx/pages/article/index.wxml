@@ -1,0 +1,7 @@
+
+<view class="article" wx:for="{{ articleList }}" wx:key="index">
+  <navigator class="article_item" url="/pages/article/detail?id={{item.id}}">
+    <text class="no">{{ index+1 }}、</text>
+    <text class="title">{{ item.title }}</text>
+  </navigator>
+</view>

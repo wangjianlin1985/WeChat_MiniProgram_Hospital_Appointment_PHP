@@ -1,0 +1,70 @@
+
+page{
+  height: 100%;
+  background: #F2F5F5;
+}
+.header{
+  height: 128rpx;
+}
+.header-set-img{
+  position: absolute;
+  top: 38px;
+  left: 20px;
+}
+.header-img{
+  width: 70px;
+  height: 70px;
+}
+.sex{
+  width: 13px;
+  height: 13px;
+  padding-left: 15px;
+}
+
+.person-info{
+  position: absolute;
+  top: 50px;
+  left: 115px;
+}
+.name-info{
+  color: #B2B2B2;
+  margin-top: 10rpx;
+}
+.main{
+  background: #F2F5F5;
+}
+
+.main-layout{
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 70px;
+
+}
+.content-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 710rpx;
+  height: 45px;
+  border-radius: 10px;
+  background: #ffff;
+  margin: 10rpx 20rpx;
+
+}
+.content-lf{
+  display: flex;
+  align-items: center;
+  padding-left: 40rpx;
+}
+.arrow {
+  width: 4px;
+  height: 7px;
+  padding-right: 17px;
+}
+.content-img{
+  width: 17px;
+  height: 17px;
+  margin: 11px 20px;
+}

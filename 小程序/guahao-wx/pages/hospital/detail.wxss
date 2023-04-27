@@ -1,0 +1,14 @@
+.swiper {
+  height: 350rpx;
+}
+
+.slide-image {
+  width: 750rpx;
+  height: 350rpx;
+}
+
+.info {
+  width: 700rpx;
+  padding: 25rpx;
+  line-height: 50rpx;
+}

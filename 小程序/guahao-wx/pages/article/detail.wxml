@@ -1,0 +1,5 @@
+<view class="article">
+  <view class='title'>{{article.title}}</view>
+  <view class="time">更新于{{ article.updated_at}}</view>
+  <view class='content'>{{article.content}}</view>
+</view>

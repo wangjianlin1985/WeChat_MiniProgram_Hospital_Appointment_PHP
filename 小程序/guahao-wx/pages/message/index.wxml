@@ -1,0 +1,38 @@
+<view class="topics-main">
+
+<scroll-view class="posts-list" style="height:100%" scroll-y="true" bindscrolltolower="lower">
+  <block wx:for="{{messageList}}" wx:key="index">
+
+    <view class="weui-panel weui-panel_access posts-item" index="{{index}}" id="{{item.id}}">
+
+      <view class="weui-panel__bd">
+        <navigator class="weui-media-box weui-media-box_appmsg post-nav" hover-class="weui-cell_active">
+
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg post-avatar">
+          <image wx:if="{{item.receive=='customer'}}" class="weui-media-box__thumb author-avatar" src="{{baseUrl+item.avatar}}"></image>
+          <view wx:if="{{item.receive=='doctor'}}" class="weui-media-box__thumb author-avatar">
+            <open-data modle="aspectFit" type="userAvatarUrl"></open-data>
+          </view>
+        </view>
+
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="author">
+            <view class="author-name">
+              <text wx:if="{{item.receive=='doctor'}}">@{{item.to}}</text>
+              <text wx:if="{{item.receive=='customer'}}">{{item.from}}@{{item.to}}</text>
+              <text style="font-size:14px;margin-left:10px;">{{item.updated_at}}</text>
+            </view>
+            <view class="posts-title">{{item.content}}</view>
+          </view>
+
+        </view>
+        </navigator>
+
+      </view>
+    </view>
+
+
+  </block>
+</scroll-view>
+
+</view>

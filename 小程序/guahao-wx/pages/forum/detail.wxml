@@ -1,0 +1,24 @@
+<view class="title">
+  <text>{{ forum.title }}</text>
+</view>
+<view class="line"></view>
+<block wx:for="{{ forum.reply }}" wx:key="index">
+  <view class="replys">
+      <view class="floor">#{{ index+1 }}  {{item.from}} @ {{item.to}}</view>
+      <view class="content">{{item.content}}</view>
+      <view class="time_reply">
+        <text class="time">{{ item.created_at }}</text>
+        <text class="reply" bindtap="replyTap" 
+              data-forum_id="{{ forum.id }}" 
+              data-from="{{ item.from}}"
+              data-from_id="{{ item.from_id}}">回复</text>
+      </view>
+  </view>
+</block>
+<view style="padding-top:20px;padding-border-bottom:40px;text-align:center;">
+  <text style="display:inline-block;text-align:center;background-color:#07c160;width:184px;height:40px;line-height:40px;color:#fff;"
+   bindtap="replyTap" 
+   data-forum_id="{{ forum.id }}" 
+   data-from="{{ forum.from}}"
+   data-from_id="{{ forum.from_id}}">回帖</text>
+</view>

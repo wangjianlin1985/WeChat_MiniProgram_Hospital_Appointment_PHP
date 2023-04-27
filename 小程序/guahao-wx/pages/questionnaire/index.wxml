@@ -1,0 +1,7 @@
+
+<view class="questionnaire" wx:for="{{ questionnaireList }}" wx:key="index">
+  <navigator class="questionnaire_item" url="/pages/questionnaire/detail?id={{item.id}}">
+    <text class="no">{{ index+1 }}、</text>
+    <text class="title">{{ item.title }}</text>
+  </navigator>
+</view>

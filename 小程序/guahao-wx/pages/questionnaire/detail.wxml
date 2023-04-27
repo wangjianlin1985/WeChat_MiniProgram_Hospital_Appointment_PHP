@@ -1,0 +1,27 @@
+<view class="questionnaire">
+  <view class='title'>{{questionnaire.title}}</view>
+  <view class="quetions">
+    <view class="question" wx:for="{{ questions }}" wx:key="index">
+      <view class="question_title">{{ index+1 }}、{{ item.question }}</view>
+      <view class="question_options">
+        <radio-group bindchange="radioChange">
+            <label class="radio">
+              <radio value="{{ index }},A"/>A {{ item.optiona }}
+            </label>
+            <label class="radio">
+              <radio value="{{ index }},B"/>B {{ item.optionb }}
+            </label>
+            <label class="radio">
+              <radio value="{{ index }},C"/>C {{ item.optionc }}
+            </label>
+            <label class="radio">
+              <radio value="{{ index }},D"/>D {{ item.optiond }}
+            </label>
+          </radio-group>
+      </view>
+    </view>
+  </view>
+  <view style="margin-top:20px;padding-bottom:30px">
+      <button bindtap="saveTap" type="primary">提交保存</button>
+    </view>
+</view>

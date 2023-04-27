@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/index",
+    "pages/info/index",
+    "pages/city/index",
+    "pages/tongji/index",
+    "pages/hospital/index",
+    "pages/hospital/detail",
+    "pages/doctor/index",
+    "pages/doctor/detail",
+    "pages/card/index",
+    "pages/card/opt",
+    "pages/doctor/appiontment",
+    "pages/article/index",
+    "pages/article/detail",
+    "pages/message/index",
+    "pages/questionnaire/index",
+    "pages/questionnaire/detail",
+    "pages/reg/index",
+    "pages/login/index",
+    "pages/order/index",
+    "pages/pay/index",
+    "pages/forum/index",
+    "pages/forum/detail",
+    "pages/forum/reply"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "医院挂号",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#13b239",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-o.png"
+      },
+      {
+        "pagePath": "pages/city/index",
+        "text": "医院",
+        "iconPath": "static/icons/doctor.png",
+        "selectedIconPath": "static/icons/doctor-o.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/icons/my.png",
+        "selectedIconPath": "static/icons/my-o.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

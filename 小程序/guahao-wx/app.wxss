@@ -1,0 +1,19 @@
+/**app.wxss**/
+.line{
+  width: 100%;
+  height: 10rpx;
+  background-color: #f0f0f0;
+}
+.text-right{
+  text-align: right;
+}
+.width50{
+  width: 50%;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items:center;
+}

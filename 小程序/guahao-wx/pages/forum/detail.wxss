@@ -1,0 +1,26 @@
+.title{
+  line-height: 100rpx;
+  text-align: center;
+}
+.replys{
+  border-bottom: 1px solid #e8e8e8;
+  padding:20rpx 10rpx;
+}
+.floor{
+  padding-left:20rpx;
+  line-height: 80rpx;
+}
+.content{
+  text-indent: 2em;
+  line-height: 60rpx;
+}
+.time_reply{
+  line-height: 60rpx;
+}
+.time{
+  color:#888888;
+}
+.reply{
+  color:aqua;
+  margin-left: 10px;
+}

@@ -1,0 +1,14 @@
+<view class="head-list">
+  <view>@{{ to }}</view>
+</view>
+<form bindsubmit="formSubmit">
+  <input name="to_id" value="{{to_id}}" style="display:none"/>
+  <input name="forum_id" value="{{forum_id}}" style="display:none"/>
+  <input name="openid" value="{{openid}}" style="display:none"/>
+  <view class="textarea-set">
+    <textarea name="content" cursor-spacing="100"></textarea>
+  </view>
+  <view style="padding:20px 0px 40px 0px;">
+    <button form-type="submit" type="primary">回复</button>
+  </view>
+</form>

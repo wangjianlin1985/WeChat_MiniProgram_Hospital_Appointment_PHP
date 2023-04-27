@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="swiper">
+    <swiper-item wx:for="{{banners}}" wx:key="index">
+      <image src="{{config.url+item.url}}" mode="widthFix" class="slide-image" />
+    </swiper-item>
+  </swiper>
+  <view class="line"></view>
+  <view class="nav_top">
+    <navigator class="nav_top_items" url="/pages/article/index">
+      <image src="/static/images/zixun.png" mode="aspectFill"></image>
+      <view class="text">新闻资讯</view>
+    </navigator>
+    <navigator class="nav_top_items" url="/pages/doctor/index" open-type="switchTab">
+      <image src="/static/images/yuyue.png" mode="aspectFill"></image>
+      <view class="text">预约医生</view>
+    </navigator>
+    <navigator class="nav_top_items" url="/pages/forum/index">
+      <image src="/static/images/forum.png" mode="aspectFill"></image>
+      <view class="text">论坛讨论</view>
+    </navigator>
+  </view>
+  <view class="line"></view>
+  <view class="nav_section">
+    <block wx:for="{{doctorList}}" wx:key="index">
+      <navigator url="/pages/doctor/detail?doctor_id={{item.id}}">
+        <view class="nav_section_items">
+          <!--image-->
+          <view class="section_image">
+            <block wx:if="{{item.avatar}}">
+              <image src="{{baseUrl+item.avatar}}" mode="aspectFill"></image>
+            </block>
+            <block wx:else>
+              <image src="/static/images/doctor.jpg" mode="aspectFill"></image>
+            </block>
+          </view>
+          <!--content-->
+          <view class="section_cont">
+            <view class="section_cont_sub">
+              <text>{{item.name}}（{{item.sex}}）（{{item.counts}}人约）</text>
+            </view>
+            <view class="section_cont_price">{{ item.hospital}} / {{ item.department}}</view>
+            <view class="intro">{{item.intro}}</view>
+          </view>
+          <!--book-->
+          <view class="section_book">
+            <text>预约</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

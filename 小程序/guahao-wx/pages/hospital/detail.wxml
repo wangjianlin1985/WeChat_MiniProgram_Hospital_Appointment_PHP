@@ -1,0 +1,14 @@
+<swiper class="swiper">
+  <swiper-item wx:for="{{hospital.images}}" wx:key="index">
+    <image src="{{config.url+item}}" mode="widthFix" class="slide-image" />
+  </swiper-item>
+</swiper>
+<view class="info">
+  <view>{{ hospital.name }}</view>
+  <view>{{ hospital.address }}</view>
+  <view>{{ hospital.tel }}</view>
+  <view>{{ hospital.intro }}</view>
+</view>
+<view>
+  <button bindtap="guahao" type="primary">去挂号</button>
+</view>

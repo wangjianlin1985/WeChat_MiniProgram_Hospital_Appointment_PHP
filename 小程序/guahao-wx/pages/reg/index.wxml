@@ -1,0 +1,50 @@
+<view class="main">
+  <form bindsubmit="formSubmit">
+  <view class="head-list">
+    <view>昵称</view>
+    <view>
+      <input class="input-set" type="text" placeholder="请填写昵称" name="username"></input>
+    </view>
+  </view>
+  <view class="head-list">
+    <view>手机号</view>
+    <view>
+      <input type="number" class="input-set" name="phone" placeholder="请填写手机号" />
+    </view>
+  </view>
+  <view class="head-list">
+    <view>登录密码</view>
+    <view>
+      <input class="input-set" type="text" placeholder="请填写密码" name="password"></input>
+    </view>
+  </view>
+  <view class="head-list">
+    <view>身份证号</view>
+    <view>
+      <input type="idcard" class="input-set" name="idcard" placeholder="请填写身份证号" />
+    </view>
+  </view>
+  <view class="head-list">
+    <view>性别</view>
+    <view>
+      <radio-group bindchange="sexRadioChange">
+        <label class="radio">
+          <radio value="boy" checked="true" name="sex" />男
+        </label>
+        <label class="radio">
+          <radio value="girl" name="sex" />女
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="head-list">
+    <view>联系地址</view>
+    <view>
+      <input type="text" class="input-set" name="address" placeholder="请填写联系地址" />
+    </view>
+  </view>
+  <view style="margin-top:20px">
+    <button form-type="submit" type="primary">注册账号</button>
+  </view>
+</form>
+</view>

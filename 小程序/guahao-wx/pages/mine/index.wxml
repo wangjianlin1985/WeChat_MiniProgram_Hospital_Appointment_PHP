@@ -1,0 +1,79 @@
+<view class="container">
+  <view wx:if="{{openid}}">
+    <view class="header">
+      <view class="header-set-img">
+        <view class="header-img">
+          <open-data modle="aspectFit" type="userAvatarUrl"></open-data>
+        </view>
+      </view>
+    </view>
+    <view class="person-info" bindtap="toEditor">
+      <text class="name">{{ customer.username }}</text>
+      <image wx:if="{{ customer.sex=='girl' }}" class="sex" src="/static/images/girl.png"></image>
+      <image wx:if="{{ customer.sex=='boy' }}" class="sex" src="/static/images/man.png"></image>
+      <view class="name-info">{{ customer.phone }}</view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="header">
+      <view class="header-set-img">
+        <image src="/static/images/head.png" class="header-img"></image>
+      </view>
+    </view>
+    <view class="person-info" bindtap="toEditor">
+      <text class="name"></text>
+      <view class="name-info">您还未登录</view>
+    </view>
+  </view>
+  <!-- 导航 -->
+  <view class="main">
+    <view class="main-layout">
+      <navigator class="content-layout" url="/pages/order/index">
+        <view class="content-lf">
+          <view>我的订单</view>
+        </view>
+        <image class="arrow" src="/static/images/arrow.png"></image>
+      </navigator>
+      <navigator class="content-layout" url="/pages/tongji/index">
+        <view class="content-lf">
+          <view>就诊统计</view>
+        </view>
+        <image class="arrow" src="/static/images/arrow.png"></image>
+      </navigator>
+      <navigator class="content-layout" url="/pages/card/index">
+        <view class="content-lf">
+          <view>我的就诊卡</view>
+        </view>
+        <image class="arrow" src="/static/images/arrow.png"></image>
+      </navigator>
+      <navigator class="content-layout" url="/pages/message/index">
+        <view class="content-lf">
+          <view>我的留言</view>
+        </view>
+        <image class="arrow" src="/static/images/arrow.png"></image>
+      </navigator>
+      <navigator class="content-layout" url="/pages/info/index">
+        <view class="content-lf">
+          <view>编辑资料</view>
+        </view>
+        <image class="arrow" src="/static/images/arrow.png"></image>
+      </navigator>
+      <view wx:if="{{openid}}">
+        <view class="content-layout" bindtap="logoutTap">
+          <view class="content-lf">
+            <view>退出登录</view>
+          </view>
+          <image class="arrow" src="/static/images/arrow.png"></image>
+        </view>
+      </view>
+      <view wx:else>
+        <navigator class="content-layout" url="/pages/login/index">
+          <view class="content-lf">
+            <view>登录账号</view>
+          </view>
+          <image class="arrow" src="/static/images/arrow.png"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

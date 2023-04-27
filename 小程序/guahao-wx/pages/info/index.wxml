@@ -1,0 +1,70 @@
+<view class="main">
+  <form bindsubmit="formSubmit">
+  <view class="head-list">
+    <view>昵称</view>
+    <view>
+      <input class="input-set" type="text" placeholder="请填写昵称" 
+      value="{{ customer.username }}"
+      name="username"></input>
+    </view>
+  </view>
+  <view class="head-list">
+    <view>手机号</view>
+    <view>
+      <input type="number" class="input-set" 
+      value="{{ customer.phone }}"
+      name="phone" placeholder="请填写手机号" />
+    </view>
+  </view>
+  <view class="head-list">
+    <view>登录密码</view>
+    <view>
+      <input class="input-set" type="text" placeholder="请填写密码" 
+      value="{{ customer.password }}"
+      name="password"></input>
+    </view>
+  </view>
+  <view class="head-list">
+    <view>身份证号</view>
+    <view>
+      <input type="idcard" class="input-set" 
+      value="{{ customer.idcard}}"
+      name="idcard" placeholder="请填写身份证号" />
+    </view>
+  </view>
+  <view class="head-list">
+    <view>性别</view>
+    <view>
+      <radio-group bindchange="sexRadioChange">
+        <label class="radio">
+          <block wx:if="{{ customer.sex=='boy' }}">
+          <radio value="boy" checked="true" name="sex" />男
+          </block>
+          <block wx:if="{{ customer.sex=='girl' }}">
+          <radio value="boy" name="sex" />男
+          </block>
+        </label>
+        <label class="radio">
+          <block wx:if="{{ customer.sex=='girl' }}">
+          <radio value="girl" checked="true" name="sex" />女
+          </block>
+          <block wx:if="{{ customer.sex=='boy' }}">
+          <radio value="girl" name="sex" />女
+          </block>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="head-list">
+    <view>联系地址</view>
+    <view>
+      <input type="text" class="input-set" 
+      value="{{ customer.address }}"
+      name="address" placeholder="请填写联系地址" />
+    </view>
+  </view>
+  <view style="margin-top:20px">
+    <button form-type="submit" type="primary">提交保存</button>
+  </view>
+</form>
+</view>

@@ -1,0 +1,107 @@
+.fphs {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  line-height: 200rpx;
+  border: 1px solid coral;
+  margin: 50rpx auto 20rpx auto;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.fphs .circle {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 10rpx auto;
+  border-radius: 50%;
+  border: 1px dashed coral;
+}
+
+.fphs text {
+  color: coral;
+  font-size: 16px;
+  margin-right: 5rpx;
+}
+
+.fpcs {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  line-height: 200rpx;
+  border: 1px solid rgb(218, 199, 37);
+  margin: 50rpx auto 20rpx auto;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.fpcs .circle {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 10rpx auto;
+  border-radius: 50%;
+  border: 1px dashed rgb(218, 199, 37);
+}
+
+.fpcs text {
+  color: rgb(218, 199, 37);
+  font-size: 16px;
+  margin-right: 5rpx;
+}
+
+.fpws {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  line-height: 200rpx;
+  border: 1px solid rgb(36, 22, 236);
+  margin: 50rpx auto 20rpx auto;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.fpws .circle {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 10rpx auto;
+  border-radius: 50%;
+  border: 1px dashed rgb(36, 22, 236);
+}
+
+.fpws text {
+  color: rgb(36, 22, 236);
+  font-size: 16px;
+  margin-right: 5rpx;
+}
+
+.fpje {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  line-height: 200rpx;
+  border: 1px solid rgb(22, 236, 104);
+  margin: 50rpx auto 20rpx auto;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.fpje .circle {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 10rpx auto;
+  border-radius: 50%;
+  border: 1px dashed rgb(22, 236, 104);
+}
+
+.fpje text {
+  color: rgb(22, 236, 104);
+  font-size: 16px;
+  margin-right: 5rpx;
+}
+
+.tips {
+  text-align: center;
+}

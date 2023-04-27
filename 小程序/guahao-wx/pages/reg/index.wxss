@@ -1,0 +1,49 @@
+.head-list{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.head-img{
+  width: 50px;
+  height: 50px;
+}
+
+.input-set{
+  width: 200px;
+  text-align: right;
+}
+
+.input-set1{
+  width: 140px;
+  color: #b2b2b2;
+  font-size: 13px;
+}
+
+.sex-img{
+  width: 13px;
+  height: 13px;
+}
+
+.tip{
+  color: #b2b2b2;
+  font-size: 9px;
+  padding: 10px;
+  float: right;
+}
+
+.tip::after{
+  content: '';
+  clear: both;
+}
+
+.img-radio{
+  float: left;
+}
+
+.sex-img-radio{
+  width: 13px;
+  height: 13px;
+}
